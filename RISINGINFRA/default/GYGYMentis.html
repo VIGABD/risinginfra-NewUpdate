@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Links of CSS files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+    <title>Rising Infra</title>
+
+    <link rel="icon" type="image/png" href="/RISINGINFRA/default/favicon.png">
+    <style>
+        /* Custom CSS for the section */
+        .service-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .service-content {
+            flex: 1;
+
+            animation: slide-in-right 2s ease forwards;
+        }
+
+        .service-image {
+            flex: 1;
+            max-width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            animation: slide-in-left 2s ease forwards;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-image:hover img {
+            transform: scale(1.1);
+        }
+
+
+        .highlight-heading {
+            position: relative;
+            text-align: left;
+        }
+
+        .highlight-items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            /* Space between items */
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .highlight-item {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            transition: border-color 0.3s ease, border-width 0.3s ease;
+            /* Added border-width transition */
+            border-bottom: 5px solid #FA5531;
+            /* Reduced border width to 1px */
+        }
+
+        /* Hover effect */
+        .highlight-item:hover {
+            border-color: #1DC295;
+            /* Change border color on hover */
+            border-bottom-width: 3px;
+            /* Ensure border width stays at 1px on hover */
+        }
+
+        /* Slide-in animations */
+        @keyframes slide-in-left {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slide-in-right {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .highlight-items {
+                flex-direction: column;
+                /* Stack items vertically */
+                padding: 0;
+                /* Remove side padding */
+            }
+
+            .highlight-item {
+                padding: 10px 0;
+                /* Adjust padding for vertical layout */
+                border-bottom: 2px solid #fe5637;
+                /* Ensure visibility on smaller screens */
+            }
+        }
+
+
+        .form-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f9f9f9;
+            padding: 40px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            border-radius: 25px;
+            max-width: 80%;
+            /* Adjust width as needed */
+        }
+
+
+
+        .form-container input[type="text"],
+        .form-container input[type="email"] {
+            width: calc(100% - 24px);
+            /* Adjust width for padding */
+            padding: 8px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            float: right;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+
+        .form-container button.cancel {
+            background-color: #FE5631;
+            border-radius: 5px;
+        }
+
+        /* section container */
+        /* section container */
+        .custom-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .custom-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .box-left h4 {
+            margin-bottom: 10px;
+        }
+
+        .box-left .border-bottom {
+            border-bottom: 20px solid black;
+            margin-bottom: 10px;
+        }
+
+        .box-left .table-container {
+            margin-bottom: 10px;
+        }
+
+        .box-left .content {
+            margin-top: 10px;
+        }
+
+        .form-container {
+            width: 100%;
+        }
+
+        .box-right {
+            height: 450px;
+        }
+
+        /* Custom border styles */
+        .table-bordered {
+            border: 2px solid #ddd;
+            border-collapse: collapse;
+        }
+
+        .table-bordered th,
+        .table-bordered td {
+            border: 2px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        @media (min-width: 768px) {
+            .box-left {
+                flex: 3;
+            }
+
+            .box-right {
+                flex: 1;
+            }
+        }
+
+        /* General Styling */
+        .container {
+            padding: 0 15px;
+        }
+
+        .custom-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .custom-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .box-left {
+            flex: 1;
+        }
+
+        .box-right {
+            flex: 1;
+        }
+
+        /* New Section Styles */
+        .new-section {
+            margin-top: 70px;
+        }
+
+        .row-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .row-item {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+            /* Ensures padding and border do not affect overall width */
+            width: 100%;
+            /* Ensure each row takes full width */
+        }
+
+        .row-item a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 1.5;
+        }
+
+        .row-item:hover {
+            background-color: #1DC295;
+            transform: scale(1.02);
+        }
+
+        .row-item a:hover {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .custom-container {
+                flex-wrap: nowrap;
+            }
+
+            .box-right {
+                flex: 1;
+            }
+
+            .new-section .row-list {
+                flex-direction: column;
+                /* Stack rows vertically on larger screens */
+            }
+        }
+
+        @media (max-width: 767px) {
+            .custom-container {
+                flex-direction: column;
+            }
+
+            .box-right {
+                width: 100%;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            /* Fixed height */
+            overflow-y: auto;
+            /* Vertical scroll bar */
+            resize: none;
+            /* Optional: Prevent resizing */
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: flex-start;
+            /* Aligns the gallery box to the left */
+            padding: 30px;
+            height: auto;
+            /* Adjusted for responsive height */
+        }
+
+        .gallery-box {
+            width: 100%;
+            /* Adjusted width to ensure it is responsive */
+            max-width: 900px;
+            /* Optional: max-width for limiting size on larger screens */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .gallery-box img {
+            width: 100%;
+            /* Full width of the column */
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-box img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery-box .row {
+            margin: 0;
+        }
+
+        .gallery-box .col-md-4 {
+            padding: 30;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-box {
+                width: 90%;
+                /* Adjusted width for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+
+     <!-- Start Navbar Area -->
+     <div class="navbar-area">
+        <div class="main-responsive-nav">
+            <div class="container">
+                <div class="main-responsive-menu">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="/RISINGINFRA/default/logo-DXtzqWI7.png" class="white-logo" alt="image" width="2200px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="/RISINGINFRA/default/logo-DXtzqWI7.png" class="black-logo" alt="image" width="220px">
+                        <img src="/RISINGINFRA/default/logo-DXtzqWI7.png" class="white-logo" alt="image" width="220px">
+                    </a>
+
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+
+                        <div class="others-options-with-search d-flex align-items-center">
+                            <div class="option-item">
+                                <p>Best Properties in Prime Locations</p>
+                            </div>
+
+                            <div class="option-item">
+                                <form class="search-box">
+                                    <input type="text" class="input-search" placeholder="Search">
+                                    <button type="submit"><i class='bx bx-search'></i></button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Modal for "Not Found" message -->
+<div class="modal fade" id="notFoundModal" tabindex="-1" aria-labelledby="notFoundModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="notFoundModalLabel" style="color: white;">Not Found</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p style="color: white;">No results found for your search.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn custom-button" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+</div>
+
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    About 
+                                    <i class='bx bx-chevron-down'></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                   
+                                    <li class="nav-item">
+                                        <a href="services.html" class="nav-link">Service</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="about.html" class="nav-link">About Us</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="team.html" class="nav-link">Team</a>
+                                    </li>
+
+                                    
+                                    <li class="nav-item">
+                                        <a href="gallery.html" class="nav-link">Gallery</a>
+                                    </li>
+
+                                   
+                                    <li class="nav-item">
+                                        <a href="search-property.html" class="nav-link">Search Properties</a>
+                                    </li>
+                                   
+                                </ul>
+                            </li>
+
+                            
+                            <li class="nav-item">
+                                <a href="blog-details.html" class="nav-link">Blog </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="careers.html" class="nav-link">
+                                    Careers 
+                                </a>
+
+                            </li>
+
+                    
+                        </ul>
+
+                        <div class="others-options d-flex align-items-center">
+                            <div class="option-item"> 
+                                <a href="#" class="default-btn" style="color: white;  border-radius: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Some Section">
+                                    <i class="bi bi-calendar-check icon"></i> &nbsp;Get Appointment <span></span>
+                                </a>
+                                
+                            </div> 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-md" >
+<div class="modal-content" style="background-color: white;">
+<div class="modal-header">
+<h3 class="modal-title fs-5" id="exampleModalLabel"  style="color: black;">Get Appointment Request</h3>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<form class="form-control">
+<div class="mb-3">
+<label for="recipient-name" class="col-form-label">Name:</label>
+<input type="text" class="form-control" id="recipient-name">
+</div>
+<div class="mb-3">
+<label for="recipient-email" class="col-form-label">Email:</label>
+<input type="email" class="form-control" id="recipient-email">
+</div>
+<div class="mb-3">
+<label for="recipient-date" class="col-form-label">Appointment Date:</label>
+<input type="datetime-local" class="form-control" id="recipient-date">
+</div>
+</form>
+</div>
+<div class="modal-footer" style="border: none;">
+<button type="button" class="btn btn-custom" data-bs-dismiss="modal" style="background-color: #e64a19;">Close</button>
+<button type="button" class="btn btn-primary" id="submitBtn">Submit</button>
+</div>
+</div>
+</div>
+</div>
+
+<!--end-->
+                           
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="others-option-for-responsive">
+            <div class="container">
+                <div class="dot-menu">
+                    <div class="inner">
+                        <div class="circle circle-one"></div>
+                        <div class="circle circle-two"></div>
+                        <div class="circle circle-three"></div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="option-inner">
+                        <div class="others-options d-flex align-items-center">
+                           
+                                <div class="option-item"> 
+                                    <a href="#" class="default-btn" style="color: white; width: 180px; border-radius: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i class="bi bi-calendar-check icon"></i> &nbsp;Get Appointment <span></span>
+                                    </a>
+                                </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+    <section class="container mt-4">
+        <div class="row service-section align-items-center">
+            <div class="col-md-6 order-md-1">
+                <div class="service-image">
+                    <img src="/RISINGINFRA/default/assets/images/neighborhood/neighborhood-1.jpg" alt="Service Image">
+                </div>
+            </div>
+
+            <div class="col-md-6 order-md-5 p-4">
+                <div class="service-content">
+                    <div class="highlight-heading">
+                        <h1>GYGY Mentis</h1>
+                        <p><i class='bx bx-map'></i> Sector 140, Noida</p>
+                        <h3 style="padding-bottom: 15px;">Satrting Price 17Lakh Onwards</h3>
+                        <button onclick="toggleForm()"
+                            style="background-color: #1DC295; border-radius: 10px; height: 45px;"> <i
+                                class='bx bx-phone' style="font-size: 20px;"></i> INSTANT CALL BACK</button>
+
+                        <div id="formContainer" class="form-container">
+                            <form id="myForm">
+                                <h3 style="color: black;">Get In Touch With Us</h3>
+                                <p style="color: #AEADB3;">Please enter your details. Our team will contact you soon.
+                                </p>
+                                <label for="name" style="color: #212529;">Name:</label>
+                                <input type="text" id="name" name="name" required>
+
+                                <label for="email" style="color: #212529;">Email:</label>
+                                <input type="email" id="email" name="email" required>
+
+                                <label for="number" style="color: #212529;">Phone Number:</label>
+                                <input type="text" id="number" name="number" required>
+
+                                <button type="button" class="cancel" onclick="closeForm()">Cancel</button>
+                                <button type="submit">Submit</button>
+
+                            </form>
+                        </div>
+
+                        <h2 style="margin-top: 15px;">Projects Highlights</h2>
+                    </div>
+
+                    <div class="highlights">
+                        <div class="highlight-items">
+                            <div class="highlight-item">
+                                <span>Connectivity 10</span>
+
+                            </div>
+                            <div class="highlight-item">
+                                <span>Worthwhile &nbsp; 10</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span>Life Style &nbsp; &nbsp;10</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span>Livability &nbsp; &nbsp;10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section -->
+    <div class="container mt-5">
+        <div class="custom-container">
+
+            <!-- Right Box -->
+            <div class="custom-box box-left col-12 col-md-12">
+                <h4 style="padding-top: 10px; color: black;">GYGY Mentis</h4>
+                <p style="color: black;">Sector 140, Noida </p>
+                <div class="border-bottom"></div>
+                <p style="color: black;">Description</p>
+
+                <div class="table-container">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Location</th>
+                                    <th>Property Category </th>
+                                    <th>Size </th>
+                                    <th>Price</th>
+                                    <th>Developer</th>
+                                    <th>City</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sector 140, Noida </td>
+                                    <td>Commercial</td>
+                                    <td>100SQFT </td>
+                                    <td>17Lakh</td>
+                                    <td>GYGY</td>
+                                    <td>Noida</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="content" style="padding-top: 20px;">
+                    <p style="color: black;">Discover GYGY Mentis, strategically situated in Sector 140 of Noida,
+                        standing tall as a distinguished commercial hub spanning an expansive 4.94-acre area. This
+                        esteemed property offers a diverse array of office spaces, retail shops, and a Food Court,
+                        catering to businesses seeking substantial market presence. Featuring two impressive 24-story
+                        towers, GYGY Mentis Noida boasts around 1 lakh sq.ft. of retail space, making it a compelling
+                        choice for businesses aiming for significant market impact. Its meticulously designed
+                        infrastructure includes ample parking facilities and guaranteed lease options, ensuring a
+                        conducive environment for growth.</p>
+                    <br>
+
+                    <p style="color: black;">At GYGY Mentis 140, innovation meets functionality with top-tier retail
+                        outlets, cutting-edge office spaces, and innovative dining establishments, enhancing the
+                        commercial experience for all stakeholders. Dedicated to sustainability, GYGY Mentis integrates
+                        smart power systems covering a notable 1-acre zone, showcasing a commitment to environmental
+                        responsibility and resource efficiency.</p>
+                    <br>
+
+                    <p style="color: black;">Strategically positioned in an area known for its robust infrastructure and
+                        skilled workforce, GYGY Mentis appeals especially to technology-driven enterprises. Its
+                        convenient access to the DND Expressway, direct metro connectivity, and links to DMIC and FNG
+                        Expressway contribute to its overall accessibility and convenience. Additionally, the nearby
+                        Noida International Airport, merely a 30-minute drive away, provides seamless global
+                        connectivity, enhancing the property's appeal to businesses seeking international exposure.</p>
+                    <br>
+
+
+
+                </div>
+                <br>
+            </div>
+
+            <!-- Left Box -->
+            <div class="custom-box box-right col-12 col-md-6">
+                <h4>Enquiry Now</h4> <br>
+                <form>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div> <br>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-mail">
+                    </div> <br>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Phone Number">
+                    </div> <br>
+                    <div class="form-group">
+                        <textarea id="message" class="form-control" placeholder="Message"></textarea>
+                    </div> <br>
+                    <center> <button type="submit" class="btn btn-custom"
+                            style="background-color: #FA5531; color: white;">Submit</button></center>
+                </form>
+
+                <!-- New Section -->
+                <div class="new-section">
+                    <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Our Exclusive Projects</h3> <br>
+                    <div class="row-list">
+                        <!-- Repeat these divs for each of the 9 rows -->
+                        <div class="row-item">
+                            <a href="ACESector12.html"><b>ACE Sector 12</b></a>
+                        </div>
+                        <div class="row-item">
+                            <a href="GYGYMentis.html"><b>GYGY Mentis</b></a>
+                        </div>
+                        <div class="row-item">
+                            <a href="GaurWaveCityGhaziabad.html"><b>Gaur Wave City Ghaziabad</b></a>
+                        </div>
+                        <div class="row-item">
+                            <a href="BhutaniCityCenter150.html"><b>Bhutani City Center 150</b></a>
+                        </div>
+                        <div class="row-item">
+                            <a href="ACETerra.html"><b>ACE Terra</b></a>
+                        </div>
+                        <div class="row-item">
+                            <a href="BhutaniAvenue133.html"><b>Bhutani Avenue 133</b></a>
+                        </div>
+                        <div class="row-item">
+                            <a href="FairfoxEON.html"><b>Fairfox EON</b></a>
+                        </div>
+                        <div class="row-item">
+                            <a href="ParasAvenue.html"><b>Paras Avenue</b></a>
+                        </div>
+                        <div class="row-item">
+                            <a href="CRCTheFlagship.html"><b>CRC The Flagship</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+
+    <!-- galery -->
+    <div class="gallery-container">
+        <div class="gallery-box">
+            <div class="container"> <br>
+                <h2>Gallery Images</h2> <br>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <img src="/RISINGINFRA/default/assets/images/gallery/gallery-1.jpg" alt="Image 1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/RISINGINFRA/default/assets/images/gallery/gallery-2.jpg" alt="Image 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/RISINGINFRA/default/assets/images/gallery/gallery-3.jpg" alt="Image 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end galery -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer-area pt-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget">
+                        <div class="widget-logo">
+                            <a href="index.html">
+                                <img src="/RISINGINFRA/default/logo-DXtzqWI7.png" alt="image" width="220px">
+                            </a>
+                        </div>
+
+                        <p>Rising Infra, your trusted partner in property management in Noida, ensures seamless and
+                            efficient solutions tailored to your real estate needs. Experience excellence with our
+                            dedicated team.</p>
+
+                        <ul class="widget-social">
+                            <li>
+                                <a href="https://www.facebook.com/risinginfranoida" target="_blank">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/risinginfra/" target="_blank">
+                                    <i class='bx bxl-linkedin'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/rising_infra/" target="_blank">
+                                    <i class='bx bxl-instagram'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@rising-Infra/" target="_blank">
+                                    <i class='bx bxl-youtube'></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget">
+                        <h3>Company</h3>
+
+                        <ul class="footer-quick-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="property-details.html">Properties</a></li> 
+                            <li><a href="about.html">About US</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="blog-details.html">Blog</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="gallery.html">Gallery </a></li>
+                            <li><a href="contact.html">Contact Us </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget">
+                        <h3>Contact</h3>
+
+                        <ul class="widget-info">
+                            <li>
+                                <i class='bx bxs-map'></i>
+                                1715-1715A, 17th Floor, Astralis Supernova, Sector 94, Noida, Uttar Pradesh 201301
+
+                            </li>
+
+                            <li>
+                                <i class='bx bxs-phone'></i>
+                                <a href="tel:000123456789">+91 9990633353</a>
+                            </li>
+
+                            <li>
+                                <i class='bx bx-envelope'></i>
+                                <a href="#"><span>info@risinginfra.in</span></a>
+                            </li>
+
+                            <li>
+                                <i class='bx bx-time'></i>
+                                10 AM - 6 PM (Sun-Mon)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget">
+                        <h3>Newsletter</h3>
+
+                        <div class="widget-newsletter">
+                            <form class="newsletter-form" data-bs-toggle="validator">
+                                <input type="email" class="input-newsletter" placeholder="Email Address" name="EMAIL"
+                                    required="" autocomplete="off">
+
+                                <button type="submit"><i class='bx bx-envelope'></i></button>
+                                <div id="validator-newsletter" class="form-result"></div>
+                            </form>
+
+                            <div class="newsletter-content">
+                                <p>Sign up for updates on the latest news and articles. Enjoy relevant content without
+                                    the spam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-area">
+            <div class="container">
+                <div class="copyright-area-content">
+                    <p>©2024 <a href="index.html" target="_blank">Rising Infra</a>.All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Area -->
+
+    <!-- Start Go Top Area -->
+    <div class="go-top">
+        <i class='bx bx-chevron-up'></i>
+    </div>
+    <!-- End Go Top Area -->
+
+    <!-- Links of JS files -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/nice-select.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/fancybox.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+        function toggleForm() {
+            var formContainer = document.getElementById("formContainer");
+            formContainer.style.display = (formContainer.style.display === "block") ? "none" : "block";
+            document.body.style.overflow = (formContainer.style.display === "block") ? "hidden" : "auto";
+        }
+
+        function closeForm() {
+            document.getElementById("formContainer").style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+            // Handle form submission here (e.g., send data to server)
+            // For demo purposes, just close the form
+            closeForm();
+        });
+
+        const textarea = document.getElementById('message');
+
+        textarea.addEventListener('input', function () {
+            // Split the text by spaces to count words
+            const words = textarea.value.split(/\s+/);
+
+            // If words exceed 30, ensure the textarea has a scroll
+            if (words.length > 30) {
+                textarea.style.overflowY = 'auto';
+            } else {
+                textarea.style.overflowY = 'hidden';
+            }
+        });
+
+        
+        // Appointment modal
+        document.addEventListener('DOMContentLoaded', function() {
+            const exampleModal = document.getElementById('exampleModal');
+            const submitBtn = document.getElementById('submitBtn');
+            const triggerButtons = document.querySelectorAll('[data-bs-toggle="modal"]');
+
+            if (exampleModal) {
+                triggerButtons.forEach(button => {
+                    button.addEventListener('click', function(event) {
+                        event.preventDefault(); // Prevent default action if necessary
+
+                        // Scroll to the top of the page
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                        // Use requestAnimationFrame to ensure the scroll completes before showing the modal
+                        requestAnimationFrame(() => {
+                            setTimeout(() => {
+                                const modal = new bootstrap.Modal(exampleModal);
+                                modal.show();
+                            }, 300); // Delay slightly to ensure smooth scrolling
+                        });
+                    });
+                });
+
+                exampleModal.addEventListener('hide.bs.modal', () => {
+                    // Reload the page when the modal is hidden
+                    window.location.reload();
+                });
+
+                submitBtn.addEventListener('click', () => {
+                    // Optional: Add form validation or processing here
+
+                    // Hide the modal, triggering page reload
+                    const modal = bootstrap.Modal.getInstance(exampleModal);
+                    modal.hide();
+                });
+            }
+        });
+       // Appointment modal end
+    </script>
+
+</body>
+
+</html>
